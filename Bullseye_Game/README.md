@@ -1,3 +1,3 @@
 # Bullseye Game
 
-Is a game to choose a random number and to try to land on the slider the closest to that number. 
+Is a game that chooses a random number on build and the player tries to land the slider closest to that number. 
