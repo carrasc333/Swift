@@ -13,6 +13,9 @@
 		42464DC6270E783500DB8B0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42464DC5270E783500DB8B0B /* Preview Assets.xcassets */; };
 		42464DD1270E80A300DB8B0B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42464DD0270E80A300DB8B0B /* Game.swift */; };
 		42464DD9270FDC7E00DB8B0B /* BullseyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42464DD8270FDC7E00DB8B0B /* BullseyeTests.swift */; };
+		427D21F127CBDEF300BE487C /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427D21F027CBDEF300BE487C /* Shapes.swift */; };
+		427D21F327CC328300BE487C /* RoundViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427D21F227CC328300BE487C /* RoundViews.swift */; };
+		427D21F527CDD6C400BE487C /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427D21F427CDD6C400BE487C /* BackgroundView.swift */; };
 		42CE87462724C7D1008F365D /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CE87452724C7D1008F365D /* TextViews.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 		42464DD6270FDC7E00DB8B0B /* BullseyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullseyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42464DD8270FDC7E00DB8B0B /* BullseyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeTests.swift; sourceTree = "<group>"; };
 		42464DDA270FDC7E00DB8B0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		427D21F027CBDEF300BE487C /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		427D21F227CC328300BE487C /* RoundViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundViews.swift; sourceTree = "<group>"; };
+		427D21F427CDD6C400BE487C /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		42CE87452724C7D1008F365D /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +114,9 @@
 			children = (
 				42464DC0270E783400DB8B0B /* ContentView.swift */,
 				42CE87452724C7D1008F365D /* TextViews.swift */,
+				427D21F027CBDEF300BE487C /* Shapes.swift */,
+				427D21F227CC328300BE487C /* RoundViews.swift */,
+				427D21F427CDD6C400BE487C /* BackgroundView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -232,8 +241,11 @@
 			files = (
 				42464DC1270E783400DB8B0B /* ContentView.swift in Sources */,
 				42464DD1270E80A300DB8B0B /* Game.swift in Sources */,
+				427D21F127CBDEF300BE487C /* Shapes.swift in Sources */,
+				427D21F527CDD6C400BE487C /* BackgroundView.swift in Sources */,
 				42464DBF270E783400DB8B0B /* BullseyeApp.swift in Sources */,
 				42CE87462724C7D1008F365D /* TextViews.swift in Sources */,
+				427D21F327CC328300BE487C /* RoundViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
