@@ -19,6 +19,7 @@ struct RoundedImageViewStroked: View {
         Circle()
           .strokeBorder(Color("ButtonStrokeColor"), lineWidth: 2.0)
       )
+    
   }
 }
 
