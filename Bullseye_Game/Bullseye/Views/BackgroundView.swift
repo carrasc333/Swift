@@ -56,15 +56,9 @@ struct BottomView: View {
   
   var body: some View {
     HStack {
-      VStack{
-        LabelText(text: "Score")
         NumberView(title: "Score", text: String(game.score))
-      }
-      Spacer()
-      VStack{
-        LabelText(text: "Round")
+        Spacer()
         NumberView(title: "Round", text: String(game.round))
-      }
     }
   }
 }
