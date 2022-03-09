@@ -16,6 +16,7 @@
 		427D21F127CBDEF300BE487C /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427D21F027CBDEF300BE487C /* Shapes.swift */; };
 		427D21F327CC328300BE487C /* RoundViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427D21F227CC328300BE487C /* RoundViews.swift */; };
 		427D21F527CDD6C400BE487C /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427D21F427CDD6C400BE487C /* BackgroundView.swift */; };
+		4289ADAA27D705DA00D9B473 /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4289ADA927D705DA00D9B473 /* PointsView.swift */; };
 		42CE87462724C7D1008F365D /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CE87452724C7D1008F365D /* TextViews.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		427D21F027CBDEF300BE487C /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		427D21F227CC328300BE487C /* RoundViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundViews.swift; sourceTree = "<group>"; };
 		427D21F427CDD6C400BE487C /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		4289ADA927D705DA00D9B473 /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
 		42CE87452724C7D1008F365D /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 				427D21F027CBDEF300BE487C /* Shapes.swift */,
 				427D21F227CC328300BE487C /* RoundViews.swift */,
 				427D21F427CDD6C400BE487C /* BackgroundView.swift */,
+				4289ADA927D705DA00D9B473 /* PointsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				42464DC1270E783400DB8B0B /* ContentView.swift in Sources */,
 				42464DD1270E80A300DB8B0B /* Game.swift in Sources */,
 				427D21F127CBDEF300BE487C /* Shapes.swift in Sources */,
+				4289ADAA27D705DA00D9B473 /* PointsView.swift in Sources */,
 				427D21F527CDD6C400BE487C /* BackgroundView.swift in Sources */,
 				42464DBF270E783400DB8B0B /* BullseyeApp.swift in Sources */,
 				42CE87462724C7D1008F365D /* TextViews.swift in Sources */,

@@ -18,9 +18,16 @@ struct ContentView: View {
       BackgroundView(game: $game)
       VStack {
         InstructionsView(game: $game)
+          .padding(.bottom, alertIsVisible ? 0 : 100)
+        if alertIsVisible {
+          PointsView(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
+        } else {
         HitMeButton(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
+        }
       }
-      SliderView(sliderValue: $sliderValue)
+      if !alertIsVisible {
+        SliderView(sliderValue: $sliderValue)
+      }
     }
   }
 }
@@ -28,12 +35,14 @@ struct ContentView: View {
 struct InstructionsView: View {
   @Binding var game: Game
   
+  
   var body: some View {
-    InsructionText(text:"🎯🎯🎯\nPut the Bullseye as Close as You Can to")
-      .padding(.leading,30.0)
-      .padding(.trailing,30.0)
-    BigNumberText(text: String(game.target))
-      .padding(.bottom, 100.0)
+    VStack {
+      InsructionText(text:"🎯🎯🎯\nPut the Bullseye as Close as You Can to")
+        .padding(.leading, 30.0)
+        .padding(.trailing, 30.0)
+      BigNumberText(text: String(game.target))
+    }
   }
 }
 
@@ -78,13 +87,15 @@ struct HitMeButton: View {
       RoundedRectangle(cornerRadius: 21.0)
         .strokeBorder(Color.white, lineWidth: 2.0)
     )
-    .alert(isPresented: $alertIsVisible, content: {
-      let roundedValue = Int(sliderValue.rounded())
-      let points = game.points(sliderValue: roundedValue)
-      return Alert(title: Text("Hello there"), message: Text("The slide's value is \(roundedValue).\n" + "You scored \(points) points this round."), dismissButton: .default(Text("Awesome!")) {
-        game.startNewRound(points: points)
-      })
-    })
+//  ------Example of an alert in view------
+//    .alert(isPresented: $alertIsVisible, content: {
+//      let roundedValue = Int(sliderValue.rounded())
+//      let points = game.points(sliderValue: roundedValue)
+//      return Alert(title: Text("Hello there"), message: Text("The slide's value is \(roundedValue).\n" + "You scored \(points) points this round."), dismissButton: .default(Text("Awesome!")) {
+//        game.startNewRound(points: points)
+//      })
+//    })
+    
   }
 }
 
