@@ -19,10 +19,12 @@ struct PointsView: View {
 
     VStack(spacing: 10) {
       InsructionText(text: "THE SLIDERS VALUE IS")
-      BigNumberText(text: "89")
-      BodyText(text: "You scored 200 Points\n🎉🎉🎉")
+      BigNumberText(text: String(roundedValue))
+      BodyText(text: "You scored \(points) Points\n🎉🎉🎉")
       Button(action: {
-        alertIsVisible = false
+        withAnimation {
+          alertIsVisible = false
+        }
         game.startNewRound(points: points)
       }) {
         ButtonText(text: "Start New Round")
@@ -32,6 +34,7 @@ struct PointsView: View {
       .frame(maxWidth: 300)
       .background(Color("BackgroundColor"))
       .shadow(radius: 10, x: 5, y: 5)
+      .transition(.scale)
       }
 }
 
