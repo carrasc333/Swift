@@ -111,6 +111,19 @@ struct DateText: View {
   }
 }
 
+struct BigBoldText: View {
+  var text: String
+  
+  var body: some View {
+    Text(text.uppercased())
+      .fontWeight(.black)
+      .font(.title)
+      .kerning(2.0)
+      .foregroundColor(Color("TextColor"))
+  }
+}
+
+
 
 struct SwiftUIView_Previews: PreviewProvider {
   static var previews: some View {
@@ -123,6 +136,7 @@ struct SwiftUIView_Previews: PreviewProvider {
       ButtonText(text: "Start New Round")
       ScoreText(score: 459)
       DateText(date: Date())
+      BigBoldText(text: "LEADERBOARD")
     }
     .padding()
   }
